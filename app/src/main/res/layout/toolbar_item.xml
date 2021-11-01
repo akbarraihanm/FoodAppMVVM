@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/purple_700"
+    app:elevation="8dp">
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="-8dp"
+        android:src="@drawable/ic_arrow_back_24"
+        android:background="?attr/selectableItemBackground"
+        app:tint="@color/white" />
+
+    <SearchView
+        android:id="@+id/sv_meal"
+        app:theme="@style/ThemeOverlay.SearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:queryHint="Find a meal"
+        android:iconifiedByDefault="false"
+        android:closeIcon="@drawable/ic_close_white"
+        android:searchIcon="@drawable/ic_search_24" />
+
+</androidx.appcompat.widget.Toolbar>
